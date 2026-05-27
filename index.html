@@ -1,97 +1,371 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luis Guilherme | Dev em Formação</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clínica Veterinária Vet e Amigos — Uberaba MG. Atendimento humanizado com tecnologia veterinária de ponta.">
+  <title>Vet e Amigos · Clínica Veterinária</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">LG<span>.dev</span></div>
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#habilidades">Skills</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
+<!-- Banner Acadêmico -->
+<div class="banner">
+  Projeto Acadêmico <strong>Luis Guilherme Gomes Bernardes</strong> · UNIUBE
+</div>
+
+<!-- Navegação -->
+<div class="nav-wrap" id="navWrap">
+  <nav>
+    <a href="#inicio" class="nav-logo"><span aria-hidden="true">🐾</span> Vet e Amigos</a>
+    <ul>
+      <li><a href="#inicio"   class="nav-link">Início</a></li>
+      <li><a href="#sobre"    class="nav-link">Sobre</a></li>
+      <li><a href="#servicos" class="nav-link">Serviços</a></li>
+      <li><a href="#links"    class="nav-link">Links</a></li>
+      <li><a href="#contato"  class="nav-link">Agendamento</a></li>
+    </ul>
+  </nav>
+</div>
+
+<!-- Hero -->
+<section class="hero" id="inicio">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-dots" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="pill" aria-label="Localização: Uberaba, MG">🌿 Uberaba · MG</div>
+      <h1>Cuidado veterinário com <em>amor e precisão</em></h1>
+      <p>Atendimento humanizado, tecnologia de ponta e uma equipe apaixonada por proporcionar saúde e longevidade para o seu pet.</p>
+      <div class="hero-ctas">
+        <a href="#contato" class="btn-primary">Agendar Consulta</a>
+        <a href="#servicos" class="btn-outline">Ver Serviços</a>
+      </div>
+    </div>
+
+    <div class="hero-card" aria-label="Estatísticas da clínica">
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="num">+500</div>
+          <div class="lbl">Pacientes atendidos</div>
         </div>
-    </header>
-
-    <main>
-        <section id="hero">
-            <div class="hero-content">
-                <h1>Olá, eu sou o <span class="destaque-nome">Luis Guilherme</span></h1>
-                <p class="subtitulo">Estudante de Análise e Desenvolvimento de Sistemas</p>
-                
-                <div class="status-cards">
-                    <span>📍 Uberaba, MG</span>
-                    <span>🎓 UNIUBE</span>
-                    <span>📊 3º/5 Período</span>
-                </div>
-            </div>
-        </section>
-
-        <section id="sobre">
-            <h2>Sobre Mim</h2>
-            <div class="texto-sobre">
-                <p>
-                    Atualmente no 3º período de ADS na UNIUBE, venho focando meus estudos em 
-                    <strong>Backend e Banco de Dados</strong>. Tenho facilidade com lógica de programação 
-                    e estou aprofundando em SQL e arquitetura de sistemas.
-                </p>
-                <p>
-                    Busco aplicar conceitos de Engenharia de Software e Gestão de Projetos em cada código que escrevo, 
-                    sempre focado em performance e organização.
-                </p>
-            </div>
-        </section>
-
-        <section id="habilidades">
-            <h2>Habilidades Técnicas</h2>
-            <div class="skills-grid">
-                <div class="skill-box">
-                    <h3>Programação</h3>
-                    <p>Python, Algoritmos, Estrutura de Dados</p>
-                </div>
-                <div class="skill-box">
-                    <h3>Dados & Infra</h3>
-                    <p>Oracle SQL, Modelagem de Dados, Redes</p>
-                </div>
-                <div class="skill-box">
-                    <h3>Soft Skills</h3>
-                    <p>Gestão de Projetos, Metodologias Ágeis</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="projetos">
-            <h2>Projetos em Destaque</h2>
-            <div class="grid-projetos">
-                <div class="projeto-card">
-                    <div class="tag">Acadêmico</div>
-                    <h3>Hub de Ferramentas</h3>
-                    <p>Repositório centralizando scripts de automação e calculadoras científicas em Python.</p>
-                    <a href="https://github.com/luisguigui" target="_blank" class="btn-github">Ver Repositório</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer id="contato">
-        <div class="footer-content">
-            <p>Luis Guilherme Gomes Bernardes</p>
-            <p>Email: <a href="mailto:luis.guibernardes@gmail.com">luis.guibernardes@gmail.com</a></p>
-            <div class="social-links">
-                </div>
+        <div class="stat-box">
+          <div class="num">5</div>
+          <div class="lbl">Especialidades</div>
         </div>
-    </footer>
+        <div class="stat-box">
+          <div class="num">98%</div>
+          <div class="lbl">Satisfação dos tutores</div>
+        </div>
+        <div class="stat-box">
+          <div class="num">24h</div>
+          <div class="lbl">Suporte emergencial</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="hero-scroll" aria-hidden="true">
+    <div class="scroll-line"></div>
+    Rolar
+  </div>
+</section>
+
+<!-- Sobre -->
+<section id="sobre">
+  <div class="section">
+    <div class="about-inner">
+      <div>
+        <div class="section-tag">🏥 Quem somos</div>
+        <h2 class="section-title">Referência em medicina veterinária em Uberaba</h2>
+        <p class="section-sub">Com sede em <strong>Uberaba–MG</strong>, a <strong>Vet e Amigos</strong> é referência em atendimento humanizado e tecnologia veterinária. Nosso objetivo é proporcionar saúde e longevidade para os pets da nossa região com um corpo clínico altamente qualificado.</p>
+        <div class="about-badges">
+          <span class="badge">✅ CRMV Credenciada</span>
+          <span class="badge">🔬 Diagnóstico Avançado</span>
+          <span class="badge">💚 Atendimento Humanizado</span>
+        </div>
+      </div>
+      <div class="about-visual">
+        <div class="about-card fade-up">
+          <div class="icon" aria-hidden="true">🩺</div>
+          <h4>Clínica Geral</h4>
+          <p>Consultas e acompanhamento completo</p>
+        </div>
+        <div class="about-card fade-up">
+          <div class="icon" aria-hidden="true">💉</div>
+          <h4>Vacinação</h4>
+          <p>Medicina preventiva especializada</p>
+        </div>
+        <div class="about-card fade-up">
+          <div class="icon" aria-hidden="true">🔬</div>
+          <h4>Laboratório</h4>
+          <p>Exames com resultados precisos</p>
+        </div>
+        <div class="about-card fade-up">
+          <div class="icon" aria-hidden="true">✂️</div>
+          <h4>Cirurgias</h4>
+          <p>Centro cirúrgico equipado</p>
+        </div>
+        <div class="about-card accent fade-up">
+          <div class="icon" aria-hidden="true">🏆</div>
+          <h4>Equipe premiada</h4>
+          <p>Médicos veterinários com especialização e anos de experiência dedicados ao bem-estar animal</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- Serviços -->
+<section id="servicos">
+  <div class="section">
+    <div class="services-head">
+      <div class="section-tag">🐕 Especialidades</div>
+      <h2 class="section-title">Nossos serviços especializados</h2>
+      <p class="section-sub">Do check-up de rotina às cirurgias complexas, oferecemos cuidado completo para o seu animal de estimação.</p>
+    </div>
+
+    <div class="cards-grid">
+      <article class="service-card fade-up">
+        <div style="overflow: hidden;">
+          <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=600&auto=format&fit=crop" alt="Médico veterinário examinando um cão">
+        </div>
+        <div class="service-card-body">
+          <h3>Consulta Canina</h3>
+          <p>Avaliação completa com médico veterinário especializado em cães.</p>
+        </div>
+      </article>
+      <article class="service-card fade-up">
+        <div style="overflow: hidden;">
+          <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=600&auto=format&fit=crop" alt="Gato sendo atendido na clínica felina">
+        </div>
+        <div class="service-card-body">
+          <h3>Clínica de Felinos</h3>
+          <p>Atendimento especializado e ambiente tranquilo para os seus gatos.</p>
+        </div>
+      </article>
+      <article class="service-card fade-up">
+        <div style="overflow: hidden;">
+          <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?q=80&w=600&auto=format&fit=crop" alt="Pet sendo banhado no serviço de estética animal">
+        </div>
+        <div class="service-card-body">
+          <h3>Estética Animal</h3>
+          <p>Banho, tosa e cuidados estéticos profissionais para o seu pet.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="table-wrap fade-up">
+      <div class="table-head-bar">
+        <h3>Tabela de Procedimentos</h3>
+        <span>Valores base 2026</span>
+      </div>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Procedimento</th>
+              <th scope="col">Especialidade</th>
+              <th scope="col">Valor Base</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Consulta Clínica</td>
+              <td><span class="specialty-tag">Clínica Geral</span></td>
+              <td class="price">R$ 150,00</td>
+            </tr>
+            <tr>
+              <td>Vacinação (V10/Raiva)</td>
+              <td><span class="specialty-tag">Medicina Preventiva</span></td>
+              <td class="price">R$ 120,00</td>
+            </tr>
+            <tr>
+              <td>Check-up Laboratorial</td>
+              <td><span class="specialty-tag">Diagnóstico</span></td>
+              <td class="price">R$ 180,00</td>
+            </tr>
+            <tr>
+              <td>Banho e Tosa Especializada</td>
+              <td><span class="specialty-tag">Estética</span></td>
+              <td class="price">R$ 110,00</td>
+            </tr>
+            <tr>
+              <td>Cirurgia Geral</td>
+              <td><span class="specialty-tag">Cirurgia</span></td>
+              <td class="price">Sob consulta</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- Links -->
+<section id="links">
+  <div class="section">
+    <div class="section-tag">🔗 Referências</div>
+    <h2 class="section-title">Recursos e links oficiais</h2>
+    <p class="section-sub">Acesse fontes confiáveis sobre saúde e bem-estar animal.</p>
+
+    <div class="links-grid">
+      <a href="https://portal.cfmv.gov.br/" target="_blank" rel="noopener noreferrer" class="link-card">
+        <div class="link-icon" aria-hidden="true">🏛️</div>
+        <div>
+          <h4>Conselho Federal de Medicina Veterinária</h4>
+          <p>CFMV — Órgão regulador da medicina veterinária no Brasil</p>
+        </div>
+        <span class="link-arrow" aria-hidden="true">↗</span>
+      </a>
+      <a href="https://www.petz.com.br/blog/" target="_blank" rel="noopener noreferrer" class="link-card">
+        <div class="link-icon" aria-hidden="true">📖</div>
+        <div>
+          <h4>Blog de Saúde e Bem-Estar Animal</h4>
+          <p>Dicas, artigos e informações para tutores de pets</p>
+        </div>
+        <span class="link-arrow" aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- Contato / Agendamento -->
+<section id="contato">
+  <div class="section">
+    <div class="form-wrap">
+      <div class="form-info">
+        <div class="section-tag">📩 Agendamento</div>
+        <h2 class="section-title" style="font-size: 1.5rem;">Solicite uma consulta para o seu pet</h2>
+        <p>Preencha o formulário e nossa equipe entrará em contato para confirmar o horário mais adequado para você.</p>
+        <div class="contact-details">
+          <div class="contact-item"><span class="contact-dot" aria-hidden="true"></span> Uberaba — Minas Gerais</div>
+          <div class="contact-item"><span class="contact-dot" aria-hidden="true"></span> Atendimento de segunda à sábado</div>
+          <div class="contact-item"><span class="contact-dot" aria-hidden="true"></span> <a href="tel:+5534999999999" style="color: inherit;">(34) 9 9999-9999</a></div>
+          <div class="contact-item"><span class="contact-dot" aria-hidden="true"></span> <a href="mailto:contato@vetamigos.com.br" style="color: inherit;">contato@vetamigos.com.br</a></div>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <form id="meuFormulario" novalidate>
+          <div class="form-grid">
+            <div class="form-group f-full">
+              <label for="nome">Nome do Tutor *</label>
+              <input type="text" id="nome" name="nome" placeholder="Ex: João Silva" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" name="email" placeholder="contato@exemplo.com" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="tel">WhatsApp *</label>
+              <input type="tel" id="tel" name="tel" placeholder="(34) 9 9999-9999" required autocomplete="tel">
+            </div>
+            <div class="form-group">
+              <label for="data">Data de Preferência *</label>
+              <input type="date" id="data" name="data" required>
+            </div>
+            <div class="form-group">
+              <label for="hora">Horário *</label>
+              <input type="time" id="hora" name="hora" required>
+            </div>
+            <div class="form-group f-full">
+              <label for="mensagem">Detalhes do Pet (Raça, Idade, Sintomas)</label>
+              <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva brevemente como podemos ajudar seu pet..."></textarea>
+            </div>
+          </div>
+          <button type="submit" class="submit-btn">Confirmar Solicitação de Agendamento →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Rodapé -->
+<footer>
+  <div class="footer-logo">🐾 Vet e Amigos</div>
+  <p>Desenvolvido por <strong>Luis Guilherme G. Bernardes</strong></p>
+  <p>Análise e Desenvolvimento de Sistemas · UNIUBE Uberaba–MG</p>
+  <div class="footer-sep"></div>
+  <p>Tecnologia para Internet I</p>
+  <p class="footer-copy">© 2026 Vet e Amigos · Todos os direitos reservados.</p>
+</footer>
+
+<!-- Toast de confirmação -->
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+  // Efeito de sombra no nav ao rolar
+  const navWrap = document.getElementById('navWrap');
+  window.addEventListener('scroll', () => {
+    navWrap.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  // Link ativo no nav conforme seção visível
+  const navLinks = document.querySelectorAll('.nav-link');
+  const sections = document.querySelectorAll('section[id]');
+
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(link => link.classList.remove('active'));
+        const activeLink = document.querySelector(`a[href="#${entry.target.id}"]`);
+        if (activeLink) activeLink.classList.add('active');
+      }
+    });
+  }, { threshold: 0.35 });
+
+  sections.forEach(section => sectionObserver.observe(section));
+
+  // Animação fade-up ao rolar
+  const fadeElements = document.querySelectorAll('.fade-up');
+  const fadeObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.12 });
+
+  fadeElements.forEach(el => fadeObserver.observe(el));
+
+  // Toast de notificação
+  function showToast(message) {
+    const toast = document.getElementById('toast');
+    toast.textContent = message;
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 4000);
+  }
+
+  // Submissão do formulário
+  document.getElementById('meuFormulario').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const nome  = document.getElementById('nome').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const tel   = document.getElementById('tel').value.trim();
+    const data  = document.getElementById('data').value;
+    const hora  = document.getElementById('hora').value;
+
+    if (!nome)  { showToast('⚠️ Por favor, preencha seu nome.'); return; }
+    if (!email) { showToast('⚠️ Por favor, informe seu e-mail.'); return; }
+    if (!tel)   { showToast('⚠️ Por favor, informe seu WhatsApp.'); return; }
+    if (!data)  { showToast('⚠️ Por favor, selecione uma data de preferência.'); return; }
+    if (!hora)  { showToast('⚠️ Por favor, selecione um horário.'); return; }
+
+    showToast(`✅ Olá, ${nome}! Recebemos seu agendamento. Entraremos em contato em breve.`);
+    this.reset();
+  });
+</script>
 </body>
 </html>
